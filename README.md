@@ -31,7 +31,7 @@
 
 ## 📈 Contribution Activity
 
-![Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME\&theme=tokyo-night)
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=harsh4k\&theme=tokyo-night)
 
 ---
 
