@@ -1,16 +1,67 @@
-## Hi there 👋
+# 👋 Hey, I'm Harsh
 
-<!--
-**harsh4k/harsh4k** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Computer Engineering student
+⚡ Building AI systems, dev tools, and clean UI experiences
+🎯 Focused on practical, aesthetic, and scalable projects
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Tech Stack
+
+![Tech Stack](https://skillicons.dev/icons?i=js,ts,python,c,html,css,react,nextjs,nodejs,tailwind,git,github,vscode,linux)
+
+---
+
+## 🧠 Current Focus
+
+* 🤖 Building **EDITH AI (Ollama-based assistant)**
+* 🖥️ Designing custom terminal-style interfaces
+* ⚙️ Exploring local LLM systems + automation
+* 🎨 Improving UI/UX for dev tools
+
+---
+
+## 📊 GitHub Stats
+
+![Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME\&show_icons=true\&theme=tokyonight\&hide_border=true)
+
+![Streak](https://streak-stats.demolab.com?user=YOUR_USERNAME\&theme=tokyonight\&hide_border=true)
+
+---
+
+## 📈 Contribution Activity
+
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME\&theme=tokyo-night)
+
+---
+
+## 🧩 Featured Projects
+
+### 🔹 EDITH AI
+
+> Voice-activated assistant using Ollama + Python with system control abilities
+
+### 🔹 NexCart
+
+> Clean e-commerce UI with modern frontend stack
+
+### 🔹 NOVA Engine
+
+> Experimental UI system + interactive dev environment
+
+---
+
+## 📍 About Me
+
+* 🧑‍💻 Self-driven builder
+* 🎮 Into gaming + aesthetics
+* 🌌 Interested in astronomy + AI systems
+* 🧩 Prefer building over theory
+
+---
+
+## 👀 Profile Views
+
+![Views](https://komarev.com/ghpvc/?username=YOUR_USERNAME\&color=blue\&style=flat)
+
+---
