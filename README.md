@@ -24,7 +24,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-![Streak](https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight)
+
   <img src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true" />
 </p>
 
