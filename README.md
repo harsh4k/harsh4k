@@ -1,4 +1,4 @@
-# 👋 Hey, I'm Harsh
+# 👋 Hey, I'm Harshit
 
 💻 Computer Engineering student
 ⚡ Building AI systems, dev tools, and clean UI experiences
