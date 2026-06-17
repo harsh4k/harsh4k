@@ -24,7 +24,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-[![Harsh's GitHub stats](https://github-readme-stats.vercel.app/api?username=harshitsinhchauhan250-5477)](https://github.com/harsh4k/github-readme-stats)
+  <img src="https://github-readme-stats.vercel.app/api?username=harsh4k&show_icons=true&theme=transparent" />
 </p>
 
 ## 📈 Contribution Activity
