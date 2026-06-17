@@ -24,8 +24,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-
-  <img src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true" />
+[![Harsh's GitHub stats](https://github-readme-stats.vercel.app/api?username=harshitsinhchauhan250-5477)](https://github.com/harsh4k/github-readme-stats)
 </p>
 
 ## 📈 Contribution Activity
