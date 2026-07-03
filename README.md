@@ -21,10 +21,6 @@
 
 ---
 
-## 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats-git-master-anuraghazras-projects.vercel.app/api?username=harsh4k&show_icons=true&theme=transparent" />
-</p>
 ## 📈 Contribution Activity
 
 ![Graph](https://github-readme-activity-graph.vercel.app/graph?username=harsh4k\&theme=tokyo-night)
