@@ -27,22 +27,6 @@
 
 ---
 
-## 🧩 Featured Projects
-
-### 🔹 EDITH AI
-
-> Voice-activated assistant using Ollama + Python with system control abilities
-
-### 🔹 NexCart
-
-> Clean e-commerce UI with modern frontend stack
-
-### 🔹 NOVA Engine
-
-> Experimental UI system + interactive dev environment
-
----
-
 ## 📍 About Me
 
 * 🧑‍💻 Self-driven builder
