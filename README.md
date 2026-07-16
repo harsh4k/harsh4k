@@ -113,35 +113,6 @@ alt="Contribution Graph"
 </div>
 
 ---
-
-# ~/now
-
-```bash
-$ whoami
-Harshit Chauhan
-
-$ role
-Full Stack Developer
-
-$ building
-→ Synapical      // Agency website
-→ Osynk          // Productivity platform
-→ Rudo           // Local AI assistant
-→ Velsaro        // Production e-commerce
-
-$ learning
-→ AI Agents
-→ Three.js & WebGL
-→ Backend Architecture
-→ System Design
-
-$ current_focus
-Building software people actually enjoy using.
-
-$ motto
-Build → Break → Learn → Repeat
-```
-
 ---
 
 # Principles
