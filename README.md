@@ -23,19 +23,26 @@
 ```yaml
 name: Harshit Chauhan
 role: Computer Engineering student & developer
+
 building:
   - Production React/TypeScript applications
-  - CLI tools
   - Local AI assistants
+  - Developer tooling
+
 loves:
   - Clean UI
   - Maintainable code
   - Shipping over theorizing
+
 curious:
   - Space
   - Astronomy
-  - How things are engineered
-method: Take it apart → Understand it → Build my own version
+  - AI
+  - System Design
+
+method:
+  Take it apart → Understand it → Build my own version
+
 based_in: Mumbai, India
 ```
 
@@ -53,56 +60,66 @@ based_in: Mumbai, India
 
 ## Things I've Built
 
-> Not a project dump — just the ones I'd actually show you.
+> Not a project dump — just the projects I'd confidently show.
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| **[Rudo](https://github.com/harsh4k/rudo)** | Jarvis-style local AI assistant with terminal UI, streaming responses, persistent memory, tools, and voice support | `Python` · `Ollama` · `Gemma 3` · `RAG` |
-| **[Velsaro](https://velsaro.in)** | Luxury perfume e-commerce running in production with payments, CMS and authentication | `React` · `TypeScript` · `Supabase` · `Sanity` · `Razorpay` |
-| **[NexCart](https://nexcart-v1.vercel.app)** | Modern full-stack e-commerce platform | `React` · `TypeScript` · `Vite` · `Tailwind` |
-| **[Edith](https://github.com/harsh4k/edith)** | Real-time system monitor for CPU, GPU and RAM | `Python` |
-| **[Shipd](https://github.com/harsh4k/shipd)** | Small CLI utility to simplify deployment workflows | `PowerShell` |
+| **[Rudo](https://github.com/harsh4k/rudo)** | Jarvis-style local AI assistant with memory, tools, voice and streaming | `Python` · `Ollama` · `Gemma 3` · `RAG` |
+| **[Velsaro](https://velsaro.in)** | Production luxury perfume e-commerce platform | `React` · `TypeScript` · `Supabase` · `Sanity` · `Razorpay` |
+| **[NexCart](https://nexcart-v1.vercel.app)** | Full-stack e-commerce application | `React` · `TypeScript` · `Vite` · `Tailwind` |
+| **[Edith](https://github.com/harsh4k/edith)** | Desktop system monitor | `Python` |
+| **[Shipd](https://github.com/harsh4k/shipd)** | CLI utility for deployment workflows | `PowerShell` |
 
 ---
 
 ## Currently
 
 ```yaml
-Rudo: Teaching a local model to actually be useful
-Osynk: Building a productivity & workflow automation platform
-Velsaro: Maintaining and improving a live production store
+🚀 Rudo:
+  Teaching a local model to actually be useful
+
+⚙️ Osynk:
+  Building a productivity & workflow automation platform
+
+🛍️ Velsaro:
+  Maintaining a live production e-commerce store
 ```
 
 ---
 
-## The Numbers
+## Currently Learning
+
+```text
+• Three.js & WebGL
+• AI Agents & RAG
+• System Design
+• Backend Architecture
+• Developer Experience (DX)
+```
+
+---
+
+## GitHub Activity
 
 <div align="center">
 
 <img
-  src="https://github-readme-stats.vercel.app/api?username=harsh4k&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800"
-  height="165"
-  alt="GitHub Stats"
-/>
-
-<img
-  src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true"
-  height="165"
-  alt="GitHub Streak"
+src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true"
+height="170"
 />
 
 </div>
 
 ---
 
-## Commit Activity
+## Contribution Graph
 
 <div align="center">
 
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=harsh4k&theme=tokyo-night&hide_border=true&area=true"
-  width="98%"
-  alt="Contribution Graph"
+src="https://github-readme-activity-graph.vercel.app/graph?username=harsh4k&theme=tokyo-night&hide_border=true&area=true"
+width="98%"
+alt="Contribution Graph"
 />
 
 </div>
@@ -111,12 +128,12 @@ Velsaro: Maintaining and improving a live production store
 
 ## How I Think About Building
 
-> **Idea → Sketch → Build the ugly version → Make it good → Learn → Repeat**
+> **Idea → Prototype → Ship → Improve → Repeat**
 
-- Ship first. Perfect later.
-- Read the source before the documentation.
-- Build for people, not benchmarks.
-- Good software is as much about experience as it is about code.
+- Ship first. Refine continuously.
+- Read source code whenever possible.
+- Prioritize maintainability over cleverness.
+- Build software that's enjoyable to use.
 
 ---
 
@@ -124,10 +141,10 @@ Velsaro: Maintaining and improving a live production store
 
 ### Off the clock
 
-**Gaming** · **Astronomy** · **Aesthetics** · **Watching rocket launches**
+**Gaming** • **Astronomy** • **Design** • **Rocket launches**
 
 <br/>
 
-> *Prefer building over theorizing.*
+> *Build things that matter.*
 
 </div>
