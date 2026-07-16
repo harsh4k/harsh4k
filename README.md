@@ -2,13 +2,15 @@
 
 # `H A R S H I T   C H A U H A N`
 
-### I build things for the web — and the occasional AI that talks back.
+<a href="https://github.com/harsh4k">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=I+build+things+for+the+web;And+the+occasional+AI+that+talks+back;Frontend-leaning+full-stack+dev;Perpetually+curious" alt="typing" />
+</a>
 
 **Computer Engineering student · Frontend-leaning full-stack dev · perpetually curious**
 
 <br/>
 
-[**Portfolio**](https://hxrshdev.vercel.app) &nbsp;·&nbsp; [**Live Client Site**](https://velsaro.in) &nbsp;·&nbsp; [**GitHub**](https://github.com/harsh4k) &nbsp;·&nbsp; [**Email**](mailto:harshitsinhchauhan250@gmail.com)
+[**Portfolio**](https://hxrshdev.vercel.app) &nbsp;·&nbsp; [**Email**](mailto:harshitsinhchauhan250@gmail.com)
 
 </div>
 
@@ -59,6 +61,25 @@ Rudo:     teaching a local model to actually be useful
 Osynk:    building a productivity / workflow-automation platform
 Velsaro:  keeping the live store fast, fixed, and paid-for
 ```
+
+---
+
+## The Numbers
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=harsh4k&show_icons=true&hide_border=true&theme=tokyonight&count_private=true&include_all_commits=true" height="160" alt="stats" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=harsh4k&hide_border=true&theme=tokyonight" height="160" alt="streak" />
+
+</div>
+
+### Commit Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=harsh4k&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph" width="98%" alt="activity graph" />
+
+</div>
 
 ---
 
