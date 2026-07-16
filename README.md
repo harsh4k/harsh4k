@@ -8,14 +8,7 @@
 
 <br/>
 
-<a href="https://hxrshdev.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://velsaro.in"><img src="https://img.shields.io/badge/LIVE_CLIENT_SITE-1a1a1a?style=for-the-badge&logo=shopify&logoColor=white" alt="Velsaro"/></a>
-<a href="mailto:harshitsinhchauhan250@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://github.com/harsh4k"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=harsh4k&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS" alt="views"/>
+[**Portfolio**](https://hxrshdev.vercel.app) &nbsp;·&nbsp; [**Live Client Site**](https://velsaro.in) &nbsp;·&nbsp; [**GitHub**](https://github.com/harsh4k) &nbsp;·&nbsp; [**Email**](mailto:harshitsinhchauhan250@gmail.com)
 
 </div>
 
@@ -66,18 +59,6 @@ Rudo:     teaching a local model to actually be useful
 Osynk:    building a productivity / workflow-automation platform
 Velsaro:  keeping the live store fast, fixed, and paid-for
 ```
-
----
-
-## The Numbers
-
-<div align="center">
-
-![](https://github-readme-stats.vercel.app/api?username=harsh4k&show_icons=true&hide_border=true&theme=tokyonight&count_private=true)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=harsh4k&layout=compact&hide_border=true&theme=tokyonight&langs_count=8)
-
-</div>
 
 ---
 
