@@ -1,15 +1,21 @@
-<!-- ===== HEADER ===== -->
 <div align="center">
-H A R S H I T   C H A U H A N
-**I build things for the web — and the occasional AI that talks back.**
 
-Computer Engineering student · Frontend-leaning full-stack dev · perpetually curious
+# `H A R S H I T   C H A U H A N`
 
-<a href="https://hxrshdev.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://velsaro.in"><img src="https://img.shields.io/badge/Live_Client_Site-1a1a1a?style=for-the-badge&logo=shopify&logoColor=white" alt="Velsaro"/></a>
-<a href="mailto:harshitsinhchauhan250@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+### I build things for the web — and the occasional AI that talks back.
 
-<img src="https://komarev.com/ghpvc/?username=harsh4k&color=blueviolet&style=flat-square&label=PROFILE+VIEWS" alt="views"/>
+**Computer Engineering student · Frontend-leaning full-stack dev · perpetually curious**
+
+<br/>
+
+<a href="https://hxrshdev.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+<a href="https://velsaro.in"><img src="https://img.shields.io/badge/LIVE_CLIENT_SITE-1a1a1a?style=for-the-badge&logo=shopify&logoColor=white" alt="Velsaro"/></a>
+<a href="mailto:harshitsinhchauhan250@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://github.com/harsh4k"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=harsh4k&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS" alt="views"/>
 
 </div>
 
@@ -43,22 +49,22 @@ based_in:  Mumbai, India
 
 > Not a project dump — the ones I'd actually show you.
 
-| | Project | What it is | Stack |
-|---|---|---|---|
-| AI | **[Rudo](https://github.com/harsh4k/rudo)** | Jarvis-style local AI assistant — terminal UI, streaming replies, persistent memory, tools (shell / web / files), voice in & out | `Python` · `Ollama` · `Gemma 3` · `RAG` |
-| Shop | **[Velsaro](https://velsaro.in)** | Luxury perfume e-commerce, live in production — real payments, CMS, auth | `React` · `TS` · `Supabase` · `Sanity` · `Razorpay` |
-| Cart | **[NexCart](https://nexcart-v1.vercel.app)** | Clean, fast full-stack e-commerce platform | `React` · `TS` · `Vite` · `Tailwind` |
-| Sys | **[Edith](https://github.com/harsh4k/edith)** | Real-time system monitor — CPU / GPU / RAM at a glance | `Python` |
-| CLI | **[Shipd](https://github.com/harsh4k/shipd)** | Little CLI tool to make shipping less annoying | `PowerShell` |
+| Project | What it is | Stack |
+|---|---|---|
+| **[Rudo](https://github.com/harsh4k/rudo)** | Jarvis-style local AI assistant — terminal UI, streaming replies, persistent memory, tools (shell / web / files), voice in & out | `Python` · `Ollama` · `Gemma 3` · `RAG` |
+| **[Velsaro](https://velsaro.in)** | Luxury perfume e-commerce, live in production — real payments, CMS, auth | `React` · `TS` · `Supabase` · `Sanity` · `Razorpay` |
+| **[NexCart](https://nexcart-v1.vercel.app)** | Clean, fast full-stack e-commerce platform | `React` · `TS` · `Vite` · `Tailwind` |
+| **[Edith](https://github.com/harsh4k/edith)** | Real-time system monitor — CPU / GPU / RAM at a glance | `Python` |
+| **[Shipd](https://github.com/harsh4k/shipd)** | Little CLI tool to make shipping less annoying | `PowerShell` |
 
 ---
 
 ## Currently
 
-```diff
-+ Rudo    -> teaching a local model to actually be useful
-+ Osynk   -> a productivity / workflow-automation platform
-~ Velsaro -> keeping the live store fast, fixed, and paid-for
+```yaml
+Rudo:     teaching a local model to actually be useful
+Osynk:    building a productivity / workflow-automation platform
+Velsaro:  keeping the live store fast, fixed, and paid-for
 ```
 
 ---
@@ -67,16 +73,9 @@ based_in:  Mumbai, India
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=harsh4k&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" alt="stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=harsh4k&layout=compact&hide_border=true&theme=tokyonight" alt="top langs"/>
+![](https://github-readme-stats.vercel.app/api?username=harsh4k&show_icons=true&hide_border=true&theme=tokyonight&count_private=true)
 
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=harsh4k&hide_border=true&theme=tokyonight" alt="streak"/>
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=harsh4k&theme=tokyonight&no-frame=true&column=7&margin-w=8" alt="trophies"/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=harsh4k&layout=compact&hide_border=true&theme=tokyonight&langs_count=8)
 
 </div>
 
@@ -84,9 +83,8 @@ based_in:  Mumbai, India
 
 ## How I Think About Building
 
-idea ──▶ sketch ──▶ build the ugly version ──▶ make it good
+> **idea → sketch → build the ugly version → make it good → learn → repeat**
 
-      └──────────────── learn something ◀──────────────┘
 - **Ship first, perfect later** — a live ugly thing beats a perfect idea.
 - **Read the source** — if a tool confuses me, I go read how it works.
 - **Design counts** — an interface should feel good, not just function.
@@ -101,12 +99,6 @@ idea ──▶ sketch ──▶ build the ugly version ──▶ make it good
 
 <br/>
 
-*"Prefer building over theory."*
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=harsh4k&theme=tokyo-night&hide_border=true&area=true" alt="activity graph" width="95%"/>
+*Prefer building over theory.*
 
 </div>
-      
-      
