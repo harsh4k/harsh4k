@@ -3,148 +3,145 @@
 # `H A R S H I T   C H A U H A N`
 
 <a href="https://github.com/harsh4k">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=I+build+things+for+the+web;And+the+occasional+AI+that+talks+back;Frontend-leaning+full-stack+dev;Perpetually+curious" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=650&lines=I+build+things+for+the+web;And+the+occasional+AI+that+talks+back;Frontend-leaning+Full+Stack+Developer;Perpetually+curious" />
 </a>
 
-**Computer Engineering student · Frontend-leaning full-stack developer · Perpetually curious**
+### Building production web applications, AI tools & developer experiences.
 
-<br/>
-
-<a href="https://hxrshdev.vercel.app">Portfolio</a>
-&nbsp;·&nbsp;
-<a href="mailto:harshitsinhchauhan250@gmail.com">Email</a>
+[Portfolio](https://hxrshdev.vercel.app) •
+[LinkedIn](https://www.linkedin.com/in/harshit-chauhan-17a898364/) •
+[Email](mailto:harshitsinhchauhan250@gmail.com)
 
 </div>
 
 ---
 
-## `whoami`
+# whoami
 
 ```yaml
 name: Harshit Chauhan
-role: Computer Engineering student & developer
 
-building:
-  - Production React/TypeScript applications
-  - Local AI assistants
-  - Developer tooling
+role:
+  Full Stack Developer
 
-loves:
-  - Clean UI
-  - Maintainable code
-  - Shipping over theorizing
+location:
+  Mumbai, India
 
-curious:
-  - Space
-  - Astronomy
+currently:
+  - Building production applications
+  - Creating AI tools
+  - Learning by shipping
+
+interests:
+  - Frontend Architecture
   - AI
   - System Design
+  - Developer Experience
+  - Astronomy
 
-method:
-  Take it apart → Understand it → Build my own version
-
-based_in: Mumbai, India
+philosophy:
+  Ship first.
+  Improve forever.
 ```
 
 ---
 
-## Stack
+# Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,python,c,react,nextjs,tailwind,vite,supabase,postgres,nodejs,git,github,vscode,vercel,figma" />
+<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,vite,tailwind,nodejs,supabase,postgres,python,c,git,github,vercel,vscode,figma" />
 
 </div>
 
 ---
 
-## Things I've Built
+# Featured Projects
 
-> Not a project dump — just the projects I'd confidently show.
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **[Rudo](https://github.com/harsh4k/rudo)** | Jarvis-style local AI assistant with memory, tools, voice and streaming | `Python` · `Ollama` · `Gemma 3` · `RAG` |
-| **[Velsaro](https://velsaro.in)** | Production luxury perfume e-commerce platform | `React` · `TypeScript` · `Supabase` · `Sanity` · `Razorpay` |
-| **[NexCart](https://nexcart-v1.vercel.app)** | Full-stack e-commerce application | `React` · `TypeScript` · `Vite` · `Tailwind` |
-| **[Edith](https://github.com/harsh4k/edith)** | Desktop system monitor | `Python` |
-| **[Shipd](https://github.com/harsh4k/shipd)** | CLI utility for deployment workflows | `PowerShell` |
+| Project | Description |
+|----------|-------------|
+| **Rudo** | Local AI assistant with memory, voice, tools and RAG |
+| **Velsaro** | Production luxury perfume e-commerce platform |
+| **NexCart** | Modern full-stack e-commerce |
+| **Edith** | Real-time desktop system monitor |
+| **Shipd** | CLI utility for deployment workflows |
 
 ---
 
-## Currently
+# Currently Building
 
 ```yaml
-🚀 Rudo:
-  Teaching a local model to actually be useful
+🧠 Rudo:
+  Teaching local LLMs to become actually useful.
 
 ⚙️ Osynk:
-  Building a productivity & workflow automation platform
+  Productivity + workflow automation platform.
 
-🛍️ Velsaro:
-  Maintaining a live production e-commerce store
+🛒 Velsaro:
+  Maintaining and improving a live production store.
 ```
 
 ---
 
-## Currently Learning
-
-```text
-• Three.js & WebGL
-• AI Agents & RAG
-• System Design
-• Backend Architecture
-• Developer Experience (DX)
-```
-
----
-
-## GitHub Activity
+# GitHub Activity
 
 <div align="center">
 
 <img
-src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true"
 height="170"
+src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true"
 />
 
 </div>
 
 ---
 
-## Contribution Graph
+# Contribution Graph
 
 <div align="center">
 
 <img
+width="100%"
 src="https://github-readme-activity-graph.vercel.app/graph?username=harsh4k&theme=tokyo-night&hide_border=true&area=true"
-width="98%"
-alt="Contribution Graph"
 />
 
 </div>
 
 ---
 
-## How I Think About Building
+# Contribution Snake
+
+<div align="center">
+
+<img
+src="https://raw.githubusercontent.com/harsh4k/harsh4k/output/github-contribution-grid-snake-dark.svg"
+alt="Snake animation"
+/>
+
+</div>
+
+---
+
+# How I Build
 
 > **Idea → Prototype → Ship → Improve → Repeat**
 
-- Ship first. Refine continuously.
-- Read source code whenever possible.
-- Prioritize maintainability over cleverness.
-- Build software that's enjoyable to use.
+- Build first, optimize later.
+- Read source code.
+- Prefer maintainable over clever.
+- Design is part of engineering.
+- Every project teaches the next one.
 
 ---
 
 <div align="center">
 
-### Off the clock
+## Off the clock
 
-**Gaming** • **Astronomy** • **Design** • **Rocket launches**
+**Gaming** • **Astronomy** • **Coffee** • **Rocket launches**
 
-<br/>
+<br>
 
-> *Build things that matter.*
+> *Build things worth using.*
 
 </div>
