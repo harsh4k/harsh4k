@@ -162,7 +162,7 @@ If you're building something interesting, have an opportunity, or just want to t
 
 <br/>
 
-<a href="https://hxrshdev.vercel.app">Portfolio</a>
+<a href="https://harshh.pages.dev/">Portfolio</a>
 •
 <a href="https://www.linkedin.com/in/harshit-chauhan-17a898364/">LinkedIn</a>
 •
