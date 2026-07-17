@@ -8,7 +8,7 @@
 
 ### Building production web applications, AI tools & developer experiences.
 
-<a href="https://hxrshdev.vercel.app">Portfolio</a>
+<a href="https://harshh.pages.dev/">Portfolio</a>
 &nbsp;•&nbsp;
 <a href="https://www.linkedin.com/in/harshit-chauhan-17a898364/">LinkedIn</a>
 &nbsp;•&nbsp;
