@@ -143,7 +143,6 @@ interests:
   - Developer Tools
 
 currently_listening_to:
-  - Lo-fi
   - Phonk
   - Instrumentals
 
