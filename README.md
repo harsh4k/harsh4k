@@ -72,21 +72,6 @@ philosophy:
 
 ---
 
-# Currently
-
-```yaml
-🧠 Rudo:
-  Building a local AI assistant that feels genuinely useful.
-
-⚙️ Osynk:
-  Productivity & workflow automation platform.
-
-🛍️ Velsaro:
-  Improving and maintaining a live production e-commerce store.
-```
-
----
-
 # GitHub Activity
 
 <div align="center">
