@@ -173,6 +173,5 @@ If you're building something interesting, have an opportunity, or just want to t
 
 <br/><br/>
 
-> *"Build things worth using."*
 
 </div>
