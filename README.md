@@ -128,15 +128,6 @@ fuel:
 
 If you're building something interesting, have an opportunity, or just want to talk about development, AI, or design, feel free to reach out.
 
-<br/>
-
-<a href="https://harshh.pages.dev/">Portfolio</a>
-•
-<a href="https://www.linkedin.com/in/harshit-chauhan-17a898364/">LinkedIn</a>
-•
-<a href="mailto:harshitsinhchauhan250@gmail.com">Email</a>
-
-<br/><br/>
 
 ![](https://komarev.com/ghpvc/?username=harsh4k&style=for-the-badge&color=8B5CF6)
 
