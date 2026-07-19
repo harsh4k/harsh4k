@@ -16,12 +16,11 @@ Currently:
   - Creating AI-powered tools
   - Learning by shipping
 
-Interests:
-  - Frontend Architecture
-  - AI & Local LLMs
-  - System Design
-  - Developer Experience
-  - Astronomy
+What I work on :
+-Full-Stack — React, Next.js, Node.js, .NET Core, TypeScript
+-AI/ML — LLM fine-tuning (LoRA/PEFT), Gemini API, Ollama, data pipelines
+-Backend — Python, Flask, MSSQL, REST APIs
+-Tools — Docker, Azure, Google Cloud, Git
 
 ```
 
