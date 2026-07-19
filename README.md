@@ -83,20 +83,16 @@ alt="Contribution Graph"
 # Beyond Code
 
 ```yaml
-gaming:
+Gaming:
   - Valorant
   - Forza Horizon
   - Counter-Strike 2
 
-interests:
+Interests:
   - Astronomy
   - Space Exploration
   - Product Design
   - Developer Tools
-
-currently_listening_to:
-  - Phonk
-  - Instrumentals
 
 fuel:
   - Coffee
