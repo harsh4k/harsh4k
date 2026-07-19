@@ -115,5 +115,13 @@ If you're building something interesting, have an opportunity, or just want to t
 
 <br/><br/>
 
+<a href="https://harshh.pages.dev/">Portfolio</a>
+&nbsp;•&nbsp;
+<a href="https://www.linkedin.com/in/harshit-chauhan-17a898364/">LinkedIn</a>
+&nbsp;•&nbsp;
+<a href="mailto:harshitsinhchauhan250@gmail.com">Email</a>
+
+</div>
+
 
 </div>
