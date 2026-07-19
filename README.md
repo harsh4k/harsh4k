@@ -156,7 +156,6 @@ fuel:
 
 <div align="center">
 
-### Thanks for stopping by.
 
 If you're building something interesting, have an opportunity, or just want to talk about development, AI, or design, feel free to reach out.
 
