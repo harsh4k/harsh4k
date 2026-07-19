@@ -41,9 +41,6 @@ interests:
   - Developer Experience
   - Astronomy
 
-philosophy:
-  Ship first.
-  Improve forever.
 ```
 
 ---
