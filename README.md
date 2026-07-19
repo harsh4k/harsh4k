@@ -95,18 +95,6 @@ alt="Contribution Graph"
 </div>
 
 ---
----
-
-# Principles
-
-```text
-✓ Ship before you overthink.
-✓ Build for people, not portfolios.
-✓ Read the source.
-✓ Keep it simple.
-✓ Design is part of engineering.
-✓ Learn something from every project.
-```
 
 ---
 
