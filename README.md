@@ -3,20 +3,20 @@
 # `whoami`
 
 ```yaml
-name: Harshit Chauhan
+Name: Harshit Chauhan
 
-role:
+Role:
   Full Stack Developer
 
-location:
+Location:
   Mumbai, India
 
-currently:
+Currently:
   - Building production web applications
   - Creating AI-powered tools
   - Learning by shipping
 
-interests:
+Interests:
   - Frontend Architecture
   - AI & Local LLMs
   - System Design
