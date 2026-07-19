@@ -1,9 +1,3 @@
-
-
-<a href="https://github.com/harsh4k">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=I+build+things+for+the+web.;And+the+occasional+AI+that+talks+back.;Full+Stack+Developer.;Always+building,+always+learning." alt="Typing SVG" />
-</a>
-
 ### Building production web applications, AI tools & developer experiences.
 
 <a href="https://harshh.pages.dev/">Portfolio</a>
