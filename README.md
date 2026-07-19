@@ -6,7 +6,10 @@
 Name: Harshit Chauhan
 
 Role:
-  Full Stack Developer
+ Full-Stack Engineer & AI Systems Developer based in New Delhi, India.
+ I build production web systems and fine-tune language models.
+
+
 
 Location:
   Mumbai, India
