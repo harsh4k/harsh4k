@@ -1,0 +1,50 @@
+name: refresh profile images
+
+# Redraws assets/ from live GitHub data (contributions, repos, stars, languages)
+# and commits the result when anything changed.
+on:
+  schedule:
+    - cron: "17 0 * * *" # daily, 05:47 in Mumbai
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "src/**", ".github/workflows/refresh.yml"]
+  pull_request:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: pip install fonttools brotli
+
+      # PROFILE_TOKEN (optional, a token with read:user) also counts private
+      # contributions; the built-in token sees public activity only.
+      - name: Draw
+        run: python3 scripts/build.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+
+      - name: Commit if changed
+        run: |
+          git add assets
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git config user.name "Harshit"
+          git config user.email "harshitsinhchauhan250@gmail.com"
+          git commit -m "Refresh profile images"
+          git push
