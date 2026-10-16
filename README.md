@@ -1,121 +1,35 @@
+<!-- Images are drawn by scripts/build.py and refreshed daily by .github/workflows/refresh.yml. -->
 
+<a href="https://harshh.pages.dev">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/bento-dark.svg">
+    <img alt="Hey, I'm Harshit, a software developer from Mumbai. Software Developer Intern at Synapical, NamasteDev Hackathon 2026 top 17 winner, B.Tech Computer Engineering at NMIMS Mumbai." src="assets/bento-light.svg" width="100%">
+  </picture>
+</a>
 
-# `Harshit Chauhan`
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <img alt="My GitHub contributions over the last year" src="assets/activity-light.svg" width="100%">
+</picture>
 
-```yaml
-Role:
-    Full-Stack Engineer & AI Systems Developer based in Mumbai, India.
-    I build production web systems and fine-tune language models.
+## Things I've built
 
-Location:
-    Mumbai, India
+<a href="https://github.com/harsh4k/Getcited"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-getcited-dark.svg"><img alt="GetCited: AI search visibility audits for websites" src="assets/project-getcited-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/Bunny-OS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-bunny-os-dark.svg"><img alt="Bunny OS: local voice assistant for Windows and macOS" src="assets/project-bunny-os-light.svg" width="49%"></picture></a>
+<a href="https://www.velsaro.in/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-velsaro-dark.svg"><img alt="Velsaro: e-commerce store for an Indian attar house" src="assets/project-velsaro-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/attendov1"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-attendo-dark.svg"><img alt="Attendo: college attendance system" src="assets/project-attendo-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/rudo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-rudo-dark.svg"><img alt="Rudo: AI assistant that lives in your terminal" src="assets/project-rudo-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/nexcart"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexcart-dark.svg"><img alt="Nexcart: storefront for audio gear" src="assets/project-nexcart-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/shipd"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-shipd-dark.svg"><img alt="Shipd: daily dev report for Windows" src="assets/project-shipd-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/edith"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-edith-dark.svg"><img alt="Edith: live CPU, GPU and RAM monitor" src="assets/project-edith-light.svg" width="49%"></picture></a>
 
-Currently:
-  - Building production web applications
-  - Creating AI-powered tools
-  - Learning by shipping
+## Say hi
 
-What I work on :
-  - Full-Stack — React, Next.js, Node.js, .NET Core, TypeScript
-  - AI/ML — LLM fine-tuning (LoRA/PEFT), Gemini API, Ollama, data pipelines
-  - Backend — Python, Flask, MSSQL, REST APIs
-  - Tools — Docker, Azure, Google Cloud, Git
+Building something interesting, or want to talk web, WebGL or local AI? I'm happy to chat.
 
-```
+**[Portfolio](https://harshh.pages.dev)** · **[LinkedIn](https://www.linkedin.com/in/harshit-chauhan-17a898364/)** · **[Email](mailto:harshitsinhchauhan250@gmail.com)**
 
----
-
-# Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=ts,js,python,c,react,nextjs,vite,tailwind,nodejs,supabase,postgres,git,github,vercel,vscode,figma" />
-
-</div>
-
----
-
-# Things I've Built
-
-> Not every project. Just the ones I'm genuinely proud of.
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **[Rudo](https://github.com/harsh4k/rudo)** | Local AI assistant with streaming, memory, tools and voice support | `Python` · `Ollama` · `Gemma` · `RAG` |
-| **[Velsaro](https://velsaro.in)** | Production luxury perfume e-commerce platform | `React` · `TypeScript` · `Supabase` · `Sanity` · `Razorpay` |
-| **[NexCart](https://nexcart-v1.vercel.app)** | Modern full-stack e-commerce application | `React` · `TypeScript` · `Vite` · `Tailwind` |
-| **[Edith](https://github.com/harsh4k/edith)** | Desktop system monitor for CPU, GPU & RAM | `Python` |
-| **[Shipd](https://github.com/harsh4k/shipd)** | CLI utility for deployment workflows | `PowerShell` |
-
----
-
-# GitHub Activity
-
-<div align="center">
-
-<img
-src="https://streak-stats.demolab.com?user=harsh4k&theme=tokyonight&hide_border=true"
-height="170"
-/>
-
-</div>
-
----
-
-# Contribution Graph
-
-<div align="center">
-
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=harsh4k&theme=tokyo-night&hide_border=true&area=true"
-width="100%"
-alt="Contribution Graph"
-/>
-
-</div>
-
----
-
----
-
-# Beyond Code
-
-```yaml
-Gaming:
-  - Valorant
-  - Forza Horizon
-  - Counter-Strike 2
-
-Interests:
-  - Astronomy
-  - Space Exploration
-  - Product Design
-  - Developer Tools
-
-fuel:
-  - Coffee
-  - Curiosity
-```
-
----
-
-<div align="center">
-
-
-If you're building something interesting, have an opportunity, or just want to talk about development, AI, or design, feel free to reach out.
-
-
-![](https://komarev.com/ghpvc/?username=harsh4k&style=for-the-badge&color=8B5CF6)
-
-<br/><br/>
-
-<a href="https://harshh.pages.dev/">Portfolio</a>
-&nbsp;•&nbsp;
-<a href="https://www.linkedin.com/in/harshit-chauhan-17a898364/">LinkedIn</a>
-&nbsp;•&nbsp;
-<a href="mailto:harshitsinhchauhan250@gmail.com">Email</a>
-
-</div>
-
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
+  <img alt="Harshit Chauhan" src="assets/footer-light.svg" width="100%">
+</picture>
