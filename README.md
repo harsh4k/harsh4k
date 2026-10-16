@@ -3,7 +3,7 @@
 <a href="https://harshh.pages.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/bento-dark.svg">
-    <img alt="Hey, I'm Harshit, a software developer from Mumbai. Software Developer Intern at Synapical, NamasteDev Hackathon 2026 top 17 winner, B.Tech Computer Engineering at NMIMS Mumbai." src="assets/bento-light.svg" width="100%">
+    <img alt="Hey, I'm Harshit, a software developer from Mumbai. NamasteDev Hackathon 2026 top 17 winner, B.Tech Computer Engineering at NMIMS Mumbai." src="assets/bento-light.svg" width="100%">
   </picture>
 </a>
 
@@ -27,7 +27,7 @@
 
 Building something interesting, or want to talk web, WebGL or local AI? I'm happy to chat.
 
-**[Portfolio](https://harshh.pages.dev)** · **[LinkedIn](https://www.linkedin.com/in/harshit-chauhan-17a898364/)** · **[Email](mailto:harshitsinhchauhan250@gmail.com)**
+<p align="center"><b><a href="https://harshh.pages.dev">Portfolio</a></b> · <b><a href="https://www.linkedin.com/in/harshit-chauhan-17a898364/">LinkedIn</a></b> · <b><a href="mailto:harshitsinhchauhan250@gmail.com">Email</a></b></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">

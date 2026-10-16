@@ -59,7 +59,7 @@ PROJECTS = [
          line="Live CPU, GPU and RAM monitor", tag="Desktop tool", stack="Python"),
 ]
 STACK = ["React", "Next.js", "TypeScript", "Node.js", ".NET", "Python", "Flask", "SQL", "REST APIs", "LLMs", "Three.js", "Tauri"]
-INTERESTS = ["gaming", "anime", "Marvel", "sci-fi", "How I Met Your Mother", "football", "volleyball",
+INTERESTS = ["gaming", "anime", "Marvel", "sci-fi", "football", "volleyball",
              "Ghost of Tsushima", "space visuals"]
 STATUS_LINES = ["web apps people use", "WebGL scroll sites", "local-first AI tools", "fast, tested UIs"]
 
@@ -91,14 +91,17 @@ def refresh(token):
     cal = user["contributionsCollection"]["contributionCalendar"]
     days = [[d["date"], d["contributionCount"], level[d["contributionLevel"]]]
             for w in cal["weeks"] for d in w["contributionDays"]]
-    langs, stars = {}, {}
+    langs, stars, pushed = {}, {}, []
     for r in user["repositories"]["nodes"]:
         stars[r["name"]] = r["stargazerCount"]
+        if r["name"] != USER:  # this profile repo is pushed to daily by the refresh itself
+            pushed.append([r["name"], r["pushedAt"][:10]])
         for e in r["languages"]["edges"]:
             n = e["node"]["name"]
             langs.setdefault(n, [0, e["node"]["color"] or "#888"])[0] += e["size"]
     data = dict(updated=dt.date.today().isoformat(), total=cal["totalContributions"], days=days,
                 repos=user["repositories"]["totalCount"], stars=stars,
+                pushed=sorted(pushed, key=lambda x: x[1], reverse=True)[:3],
                 languages=sorted(([k, v[0], v[1]] for k, v in langs.items()), key=lambda x: -x[1]))
     with open(DATA, "w") as f:
         json.dump(data, f, indent=1)
@@ -262,6 +265,25 @@ def terrain(w, h, y0, rows=12, cols=48, amp=30, color=INK, opacity=0.45):
 
 # ---------------------------------------------------------------- the bento
 
+# Short marks for the language badges; anything else uses its first two letters.
+LANG_MARKS = {"JavaScript": "JS", "TypeScript": "TS", "Python": "PY", "CSS": "CSS", "HTML": "HTML", "Rust": "RS",
+              "PowerShell": ">_", "C#": "C#", "C++": "C++", "Shell": "SH", "Astro": "AS", "Java": "JV"}
+
+
+def _ink_on(color):
+    """Black or white, whichever reads better on the badge colour."""
+    r, g, b = (int(color[i:i + 2], 16) for i in (1, 3, 5))
+    return INK if (0.299 * r + 0.587 * g + 0.114 * b) > 150 else "#ffffff"
+
+
+def lang_icon(x, y, name, color):
+    """A rounded badge in the language's GitHub colour with its short mark."""
+    mark = LANG_MARKS.get(name, name[:2].upper())
+    size = 17 if len(mark) <= 2 else 12 if len(mark) == 3 else 10
+    return (f'<rect x="{x}" y="{y}" width="42" height="42" rx="11" fill="{color}"/>'
+            + text(x + 21, y + 21 + size * 0.36, mark, size, "MonoB", _ink_on(color), "middle"))
+
+
 def bento(mode, data):
     t = THEMES[mode]
     current, longest = streaks(data["days"])
@@ -280,7 +302,7 @@ def bento(mode, data):
            "@keyframes shine{0%,60%{transform:translateX(-300px)}100%{transform:translateX(420px)}}"
            ".marq{animation:marq 28s linear infinite}@keyframes marq{to{transform:translateX(-50%)}}")
     b = []
-    # Row 1: hello (red) | status + hackathon
+    # Row 1: hello (red) | latest push + hackathon
     b.append(cell(0, 0, 820, 400, t, RED))
     b.append('<clipPath id="hero"><rect width="820" height="400" rx="22"/></clipPath>')
     b.append(f'<g clip-path="url(#hero)">{terrain(820, 400, 230)}</g>')
@@ -292,10 +314,12 @@ def bento(mode, data):
         b.append(f'<g class="rot" style="animation-delay:{i * 3}s">{text(150, 352, s, 22, "MonoB", INK)}</g>')
 
     b.append(cell(840, 0, 440, 190, t))
-    b.append(label(870, 42, "Right now", t))
+    b.append(label(870, 42, "Latest push", t))
     b.append(f'<circle cx="1240" cy="38" r="7" fill="#3fb950"/><circle class="pulse" cx="1240" cy="38" r="7" fill="#3fb950"/>')
-    b.append(text(868, 108, "SOFTWARE DEVELOPER", 46, "Disp", t["fg"]))
-    b.append(text(868, 150, "Intern @ Synapical", 20, "Mono", t["dim"]))
+    pushed = data.get("pushed") or []
+    if pushed:
+        b.append(text(868, 112, pushed[0][0].upper(), 52, "Disp", t["fg"]))
+        b.append(text(868, 152, f"pushed {pushed[0][1]}", 18, "Mono", t["dim"]))
 
     b.append(cell(840, 210, 440, 190, t))
     b.append('<clipPath id="hk"><rect x="840" y="210" width="440" height="190" rx="22"/></clipPath>')
@@ -327,10 +351,10 @@ def bento(mode, data):
         bx += wdt
     b.append(f'<g class="grow">{bar}</g>')
     for i, (name, size, color) in enumerate(langs):
-        lx, ly = 460 + (i % 2) * 190, y + 128 + (i // 2) * 52
-        b.append(f'<g class="pop" style="animation-delay:{.6 + .1 * i:.2f}s"><circle cx="{lx + 7}" cy="{ly - 6}" r="7" fill="{color}"/>'
-                 + text(lx + 24, ly, name, 18, "Mono", t["fg"])
-                 + text(lx + 24, ly + 22, f"{100 * size / total:.0f}%", 14, "Mono", t["dim"]) + "</g>")
+        lx, ly = 460 + (i % 2) * 190, y + 106 + (i // 2) * 60
+        b.append(f'<g class="pop" style="animation-delay:{.6 + .1 * i:.2f}s">' + lang_icon(lx, ly, name, color)
+                 + text(lx + 54, ly + 19, name, 18, "Mono", t["fg"])
+                 + text(lx + 54, ly + 40, f"{100 * size / total:.0f}%", 14, "Mono", t["dim"]) + "</g>")
 
     b.append(cell(880, y, 400, 300, t))
     b.append(label(910, y + 42, "Studying", t))
