@@ -84,24 +84,21 @@ def refresh(token):
       contributionsCollection { contributionCalendar { totalContributions
         weeks { contributionDays { date contributionCount contributionLevel } } } }
       repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) { totalCount
-        nodes { name stargazerCount pushedAt
+        nodes { name stargazerCount
           languages(first: 8, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } } } } }""" % USER
     user = graphql(q, token)["user"]
     level = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
     cal = user["contributionsCollection"]["contributionCalendar"]
     days = [[d["date"], d["contributionCount"], level[d["contributionLevel"]]]
             for w in cal["weeks"] for d in w["contributionDays"]]
-    langs, stars, pushed = {}, {}, []
+    langs, stars = {}, {}
     for r in user["repositories"]["nodes"]:
         stars[r["name"]] = r["stargazerCount"]
-        if r["name"] != USER:  # this profile repo is pushed to daily by the refresh itself
-            pushed.append([r["name"], r["pushedAt"][:10]])
         for e in r["languages"]["edges"]:
             n = e["node"]["name"]
             langs.setdefault(n, [0, e["node"]["color"] or "#888"])[0] += e["size"]
     data = dict(updated=dt.date.today().isoformat(), total=cal["totalContributions"], days=days,
                 repos=user["repositories"]["totalCount"], stars=stars,
-                pushed=sorted(pushed, key=lambda x: x[1], reverse=True)[:3],
                 languages=sorted(([k, v[0], v[1]] for k, v in langs.items()), key=lambda x: -x[1]))
     with open(DATA, "w") as f:
         json.dump(data, f, indent=1)
@@ -265,23 +262,35 @@ def terrain(w, h, y0, rows=12, cols=48, amp=30, color=INK, opacity=0.45):
 
 # ---------------------------------------------------------------- the bento
 
-# Short marks for the language badges; anything else uses its first two letters.
-LANG_MARKS = {"JavaScript": "JS", "TypeScript": "TS", "Python": "PY", "CSS": "CSS", "HTML": "HTML", "Rust": "RS",
-              "PowerShell": ">_", "C#": "C#", "C++": "C++", "Shell": "SH", "Astro": "AS", "Java": "JV"}
+# Real logos (Simple Icons, CC0) and a few line icons for generic things (Lucide, ISC),
+# vendored by name in src/icons/icons.json so the build needs no network.
+with open(os.path.join(ROOT, "src", "icons", "icons.json")) as f:
+    LOGOS = json.load(f)
 
 
-def _ink_on(color):
-    """Black or white, whichever reads better on the badge colour."""
-    r, g, b = (int(color[i:i + 2], 16) for i in (1, 3, 5))
-    return INK if (0.299 * r + 0.587 * g + 0.114 * b) > 150 else "#ffffff"
+def _luma(color):
+    r, g, b = (int(color[i:i + 2], 16) / 255 for i in (1, 3, 5))
+    lin = [c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in (r, g, b)]
+    return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
 
 
-def lang_icon(x, y, name, color):
-    """A rounded badge in the language's GitHub colour with its short mark."""
-    mark = LANG_MARKS.get(name, name[:2].upper())
-    size = 17 if len(mark) <= 2 else 12 if len(mark) == 3 else 10
-    return (f'<rect x="{x}" y="{y}" width="42" height="42" rx="11" fill="{color}"/>'
-            + text(x + 21, y + 21 + size * 0.36, mark, size, "MonoB", _ink_on(color), "middle"))
+def _readable(color, t):
+    """The brand colour, or the theme's text colour when the brand colour would vanish on the card."""
+    a, b = sorted((_luma(color), _luma(t["cell"])))
+    return color if (b + 0.05) / (a + 0.05) >= 2.2 else t["fg"]
+
+
+def logo(x, y, size, name, t, fallback=None):
+    """The tool's real logo, size px square at x, y. Unknown names get a dot in the fallback colour."""
+    icon = LOGOS.get(name)
+    k = size / 24
+    if icon is None:
+        return f'<circle cx="{x + size / 2}" cy="{y + size / 2}" r="{size / 3}" fill="{fallback or t["dim"]}"/>'
+    if icon["kind"] == "brand":
+        return (f'<path transform="translate({x} {y}) scale({k:.3f})" fill="{_readable(icon["hex"], t)}" '
+                f'd="{icon["path"]}"/>')
+    return (f'<g transform="translate({x} {y}) scale({k:.3f})" fill="none" stroke="{t["fg"]}" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round">{icon["inner"]}</g>')
 
 
 def bento(mode, data):
@@ -290,8 +299,6 @@ def bento(mode, data):
     css = (FACE_CSS +
            ".drift{animation:drift 9s ease-in-out infinite alternate}"
            "@keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(30px)}}"
-           ".pulse{animation:pulse 1.6s ease-out infinite;transform-box:fill-box;transform-origin:center}"
-           "@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}"
            ".rot{opacity:0;animation:rot 12s infinite}"
            "@keyframes rot{0%{opacity:0;transform:translateY(14px)}3%,22%{opacity:1;transform:none}25%,100%{opacity:0;transform:translateY(-14px)}}"
            ".pop{opacity:0;animation:pop .6s ease-out forwards;transform-box:fill-box;transform-origin:left center}"
@@ -314,12 +321,10 @@ def bento(mode, data):
         b.append(f'<g class="rot" style="animation-delay:{i * 3}s">{text(150, 352, s, 22, "MonoB", INK)}</g>')
 
     b.append(cell(840, 0, 440, 190, t))
-    b.append(label(870, 42, "Latest push", t))
-    b.append(f'<circle cx="1240" cy="38" r="7" fill="#3fb950"/><circle class="pulse" cx="1240" cy="38" r="7" fill="#3fb950"/>')
-    pushed = data.get("pushed") or []
-    if pushed:
-        b.append(text(868, 112, pushed[0][0].upper(), 52, "Disp", t["fg"]))
-        b.append(text(868, 152, f"pushed {pushed[0][1]}", 18, "Mono", t["dim"]))
+    b.append(label(870, 42, "Words I code by", t))
+    b.append(text(868, 96, "SOMETIMES YOU GOTTA RUN", 37, "Disp", t["fg"]))
+    b.append(text(868, 138, "BEFORE YOU CAN WALK.", 37, "Disp", RED))
+    b.append(text(870, 172, "Tony Stark, Iron Man (2008)", 16, "Mono", t["dim"]))
 
     b.append(cell(840, 210, 440, 190, t))
     b.append('<clipPath id="hk"><rect x="840" y="210" width="440" height="190" rx="22"/></clipPath>')
@@ -352,7 +357,7 @@ def bento(mode, data):
     b.append(f'<g class="grow">{bar}</g>')
     for i, (name, size, color) in enumerate(langs):
         lx, ly = 460 + (i % 2) * 190, y + 106 + (i // 2) * 60
-        b.append(f'<g class="pop" style="animation-delay:{.6 + .1 * i:.2f}s">' + lang_icon(lx, ly, name, color)
+        b.append(f'<g class="pop" style="animation-delay:{.6 + .1 * i:.2f}s">' + logo(lx + 4, ly + 4, 34, name, t, color)
                  + text(lx + 54, ly + 19, name, 18, "Mono", t["fg"])
                  + text(lx + 54, ly + 40, f"{100 * size / total:.0f}%", 14, "Mono", t["dim"]) + "</g>")
 
@@ -369,12 +374,13 @@ def bento(mode, data):
     b.append(label(30, y + 42, "What I build with", t))
     x, yy = 30, y + 70
     for i, s in enumerate(STACK):
-        wdt = 30 + len(s) * 11.5
+        wdt = 58 + len(s) * 10.6
         if x + wdt > W - 30:
             x, yy = 30, yy + 52
         b.append(f'<g class="pop" style="animation-delay:{.08 * i:.2f}s">'
                  f'<rect x="{x}" y="{yy}" width="{wdt}" height="40" rx="20" fill="none" stroke="{t["fg"]}" stroke-opacity=".35" stroke-width="1.5"/>'
-                 + text(x + wdt / 2, yy + 26, s, 17, "Mono", t["fg"], "middle") + "</g>")
+                 + logo(x + 16, yy + 11, 18, s, t)
+                 + text(x + 42, yy + 26, s, 17, "Mono", t["fg"]) + "</g>")
         x += wdt + 10
 
     # Row 4: interests marquee | portfolio
