@@ -21,7 +21,7 @@
 <a href="https://github.com/harsh4k/rudo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-rudo-dark.svg"><img alt="Rudo: AI assistant that lives in your terminal" src="assets/project-rudo-light.svg" width="49%"></picture></a>
 <a href="https://github.com/harsh4k/nexcart"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-nexcart-dark.svg"><img alt="Nexcart: storefront for audio gear" src="assets/project-nexcart-light.svg" width="49%"></picture></a>
 <a href="https://github.com/harsh4k/shipd"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-shipd-dark.svg"><img alt="Shipd: daily dev report for Windows" src="assets/project-shipd-light.svg" width="49%"></picture></a>
-<a href="https://github.com/harsh4k/edith"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-edith-dark.svg"><img alt="Edith: live CPU, GPU and RAM monitor" src="assets/project-edith-light.svg" width="49%"></picture></a>
+<a href="https://github.com/harsh4k/loom"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-loom-dark.svg"><img alt="Loom: local automation hub that runs on Ollama" src="assets/project-loom-light.svg" width="49%"></picture></a>
 
 ## Say hi
 

@@ -55,8 +55,8 @@ PROJECTS = [
          line="Storefront for audio gear", tag="E-commerce", stack="React · TypeScript · Vite"),
     dict(slug="shipd", name="Shipd", repo="shipd", url="https://github.com/harsh4k/shipd",
          line="Daily dev report for Windows, all local", tag="CLI", stack="PowerShell · zero deps"),
-    dict(slug="edith", name="Edith", repo="edith", url="https://github.com/harsh4k/edith",
-         line="Live CPU, GPU and RAM monitor", tag="Desktop tool", stack="Python"),
+    dict(slug="loom", name="Loom", repo="loom", url="https://github.com/harsh4k/loom",
+         line="Local automation hub that runs on Ollama", tag="Automation", stack="Node.js · Electron · Ollama"),
 ]
 STACK = ["React", "Next.js", "TypeScript", "Node.js", ".NET", "Python", "Flask", "SQL", "REST APIs", "LLMs", "Three.js", "Tauri"]
 INTERESTS = ["gaming", "anime", "Marvel", "sci-fi", "football", "volleyball",
@@ -454,9 +454,9 @@ ICONS = {
               '<path class="fl" d="M28 46l4 12 4-12"/>',
               ".rk{animation:rk 1.8s ease-in-out infinite}@keyframes rk{50%{transform:translateY(-3px)}}"
               ".fl{animation:fl .4s ease-in-out infinite alternate;transform-origin:32px 46px}@keyframes fl{to{transform:scaleY(.6)}}"),
-    "edith": ('<rect x="14" y="14" width="36" height="36" rx="5"/><path d="M22 6v8M32 6v8M42 6v8M22 50v8M32 50v8M42 50v8M6 22h8M6 32h8M6 42h8M50 22h8M50 32h8M50 42h8"/>'
-              '<path class="beat" d="M18 33h6l3-7 5 13 4-9 2 3h8" pathLength="1"/>',
-              ".beat{stroke-dasharray:1;stroke-dashoffset:1;animation:beat 2s linear infinite}@keyframes beat{60%,100%{stroke-dashoffset:0}}"),
+    "loom": ('<rect x="8" y="10" width="48" height="44" rx="6"/><path d="M16 10v44M24 10v44M32 10v44M40 10v44M48 10v44M8 44h48"/>'
+             '<g class="sh"><rect x="10" y="24" width="20" height="8" rx="4" fill="currentColor"/></g>',
+             ".sh{animation:sh 2.4s ease-in-out infinite alternate}@keyframes sh{to{transform:translateX(24px)}}"),
 }
 
 
