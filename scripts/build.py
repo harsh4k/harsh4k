@@ -47,8 +47,8 @@ PROJECTS = [
          line="Local voice assistant for Windows and macOS", tag="Desktop app", stack="Tauri · Rust · Python"),
     dict(slug="velsaro", name="Velsaro", repo=None, url="https://www.velsaro.in/",
          line="E-commerce store for an Indian attar house", tag="Live store", stack="React · TypeScript · Razorpay"),
-    dict(slug="attendo", name="Attendo", repo="attendov1", url="https://github.com/harsh4k/attendov1",
-         line="College attendance system with roles", tag="Full stack", stack="React · Zod · Supabase RLS"),
+    dict(slug="late-apex", name="Late Apex", repo="apexfr", url="https://github.com/harsh4k/apexfr",
+         line="Studio site with scroll-driven night footage", tag="Motion design", stack="HTML · CSS · JS · Playwright"),
     dict(slug="rudo", name="Rudo", repo="rudo", url="https://github.com/harsh4k/rudo",
          line="AI assistant that lives in your terminal", tag="Local AI", stack="Python · Ollama · RAG"),
     dict(slug="nexcart", name="Nexcart", repo="nexcart", url="https://github.com/harsh4k/nexcart",
@@ -441,9 +441,8 @@ ICONS = {
     "velsaro": ('<rect x="18" y="26" width="28" height="32" rx="7"/><path d="M26 26v-6h12v6M28 20v-6h8v6"/><path d="M24 42h16"/>'
                 '<g class="mist"><circle cx="50" cy="12" r="2"/><circle cx="56" cy="8" r="1.5"/><circle cx="56" cy="16" r="1.5"/></g>',
                 ".mist{animation:mist 2.4s ease-out infinite}@keyframes mist{0%{opacity:0;transform:translate(-6px,4px)}40%{opacity:1}100%{opacity:0;transform:translate(4px,-4px)}}"),
-    "attendo": ('<rect x="8" y="12" width="48" height="44" rx="6"/><path d="M8 24h48M20 6v10M44 6v10"/>'
-                '<path class="chk" d="M20 40l8 8 16-16" pathLength="1"/>',
-                ".chk{stroke-dasharray:1;stroke-dashoffset:1;animation:chk 2.6s ease-in-out infinite}@keyframes chk{30%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-1}}"),
+    "late-apex": ('<path d="M6 12h52M24 12L12 58M40 12l12 46"/><path class="lane" d="M32 14v42" stroke-dasharray="6 6"/>',
+                  ".lane{animation:lane .6s linear infinite}@keyframes lane{to{stroke-dashoffset:-12}}"),
     "rudo": ('<rect x="6" y="10" width="52" height="44" rx="6"/><path d="M6 20h52"/><path d="M16 32l8 6-8 6"/>'
              '<rect class="cur" x="30" y="42" width="12" height="4" fill="currentColor" stroke="none"/>',
              ".cur{animation:cur 1s steps(1) infinite}@keyframes cur{50%{opacity:0}}"),
