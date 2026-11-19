@@ -7,6 +7,18 @@
   </picture>
 </a>
 
+I'm a software developer in Mumbai working with React, Next.js, TypeScript, and Python.
+I build web apps and Windows desktop tools.
+
+### Featured projects
+
+| Project | What it demonstrates |
+| --- | --- |
+| [Daisy](https://github.com/harsh4k/daisy) | Windows media and notification overlay with a PowerShell installer and GitHub Actions releases |
+| [GetCited](https://github.com/harsh4k/Getcited) | Next.js and Python app that crawls and audits sites for AI search visibility |
+| [Portfolio](https://github.com/harsh4k/portfolio-v3) | Astro and TypeScript project portfolio with Playwright browser tests |
+| [EDITH](https://github.com/harsh4k/edith) | Python terminal dashboard for CPU, memory, disk, and GPU readings |
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <img alt="My GitHub contributions over the last year" src="assets/activity-light.svg" width="100%">
@@ -33,3 +45,9 @@ Building something interesting, or want to talk web, WebGL or local AI? I'm happ
   <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
   <img alt="Harshit Chauhan" src="assets/footer-light.svg" width="100%">
 </picture>
+
+[Maintaining the profile images](docs/profile-images.md)
+
+## License
+
+The original profile image generator and maintenance scripts are MIT licensed. Profile artwork, personal content, and third-party fonts and icons retain their respective terms. See [LICENSE](LICENSE).

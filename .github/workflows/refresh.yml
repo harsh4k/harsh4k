@@ -24,8 +24,6 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -38,9 +36,10 @@ jobs:
       - name: Draw
         run: python3 scripts/build.py
         env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+          GITHUB_TOKEN: ${{ github.event_name != 'pull_request' && (secrets.PROFILE_TOKEN || github.token) || '' }}
 
       - name: Commit if changed
+        if: github.event_name != 'pull_request'
         run: |
           git add assets
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi

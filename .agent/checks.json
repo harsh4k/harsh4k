@@ -1,0 +1,6 @@
+{
+  "checks": [
+    { "name": "refresh event contract", "run": ["python", "scripts/check_refresh.py"] },
+    { "name": "saved-data profile rendering", "run": ["python", "scripts/check_saved_profile.py"] }
+  ]
+}
